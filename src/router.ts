@@ -10,8 +10,11 @@ import GetStarted from './views/GetStarted.vue'
 import Install from './views/Install.vue'
 import { h } from 'vue'
 import Markdown from "./components/Markdown.vue"
+import intro from './markdown/intro.md'
+import getStarted from './markdown/get-started.md'
+import install from './markdown/install.md'
 
-const genMd = filename =>  h(Markdown, {path: `../markdown/${filename}.md`, key:filename})
+const genMd = string =>  h(Markdown, {content: string, key:string})
 export const router = createRouter({
     history: createWebHistory(),
     routes: [
@@ -19,9 +22,9 @@ export const router = createRouter({
         {path: '/doc', component: Doc, 
             children: [
                 {path: "", redirect: "/doc/intro"},
-                {path: "intro", component: genMd("intro")},
-                {path: "get-started", component: genMd("get-started")},
-                {path: "install", component: genMd("install")},
+                {path: "intro", component: genMd(intro)},
+                {path: "get-started", component: genMd(getStarted)},
+                {path: "install", component: genMd(install)},
                 {path: "switch", component: SwitchDemo},
                 {path: "button", component: ButtonDemo},
                 {path: "modal", component: ModalDemo},
