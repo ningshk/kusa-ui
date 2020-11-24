@@ -120,7 +120,7 @@ aside {
     position: fixed;
     top: 0;
     left: 0;
-    padding-top: 70px;
+    padding-top: 80px;
     height: 100%;
     z-index: 5;
     > h2 {

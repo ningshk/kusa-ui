@@ -7,7 +7,7 @@
         </router-link>
         <ul class="menu">
             <li>
-                <router-link to="/doc/switch">文档</router-link>
+                <router-link to="/doc/switch"><Button theme="link" level="main">文档</Button></router-link>
             </li>
         </ul>
         <svg class="toggleAside" v-if="toggleMenuButtonVisible" @click="toggleMenu">
@@ -17,6 +17,7 @@
 </template>
 <script lang="ts">
 import { inject, Ref } from 'vue'
+import Button from "../lib/Button.vue"
 export default {
     props:{
         toggleMenuButtonVisible: {
@@ -24,6 +25,7 @@ export default {
             default: false
         }
     },
+    components: {Button},
     setup(){
         const asideVisible  = inject<Ref<boolean>>('asideVisible') // get
         const toggleMenu = () => {
@@ -35,7 +37,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 .topnav {
-    background: rgb(255,255,255,0.6);
+    background: rgb(255,255,255,1);
+    box-shadow: 0 0 16px rgba(0,0,0,.1);
     display: flex;
     padding: 16px;
     position: fixed;
@@ -59,6 +62,9 @@ export default {
         flex-wrap: nowrap;
         > li {
             margin: 0 1em;
+            a {
+                text-decoration: none;
+            }
         }
     }
     > .toggleAside {
