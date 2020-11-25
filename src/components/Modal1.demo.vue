@@ -24,9 +24,9 @@
 
 <script lang="ts">
 import { ref } from 'vue'
-import Modal from '../lib/Modal.vue'
-import Button from '../lib/Button.vue'
-import {openModal} from '../lib/openModal'
+import Modal from '../lib/Modal.vue'  // 这里是我的引用路径，请改为 import { Modal } from 'kusa-ui'
+import Button from '../lib/Button.vue'  // 这里是我的引用路径，请改为 import { Button } from 'kusa-ui'
+import {openModal} from '../lib/openModal'  // 这里是我的引用路径，请改为 import { openModal } from 'kusa-ui'
 export default {
     components: {Modal, Button},
     setup() {

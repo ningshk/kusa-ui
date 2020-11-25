@@ -83,7 +83,7 @@ export default {
     }
     > .content {
         flex-grow: 1;
-        padding-top: 60px;
+        padding-top: 76px;
         padding-left: 156px;
         @media (max-width: 500px) {
             padding-left: 0; 
@@ -120,7 +120,7 @@ aside {
     position: fixed;
     top: 0;
     left: 0;
-    padding-top: 80px;
+    padding-top: 96px;
     height: 100%;
     z-index: 5;
     > h2 {

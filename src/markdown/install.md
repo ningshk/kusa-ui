@@ -11,4 +11,4 @@ npm install kusa-ui
 yarn add kusa-ui
 ```
 
-下一节：[快速开始](/doc/get-started)
+下一节：[快速上手](/doc/get-started)

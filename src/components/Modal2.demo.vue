@@ -8,9 +8,9 @@
 </template>
 
 <script lang="ts">
-import Button from '../lib/Button.vue'
+import Button from '../lib/Button.vue'  // 这里是我的引用路径，请改为 import { Button } from 'kusa-ui'
 import { ref, h } from 'vue'
-import {openModal} from '../lib/openModal'
+import {openModal} from '../lib/openModal'  // 这里是我的引用路径，请改为 import { openModal } from 'kusa-ui'
 
 export default {
 components: {

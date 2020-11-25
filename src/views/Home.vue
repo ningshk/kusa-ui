@@ -6,7 +6,7 @@
             <h1 class="title">Kusa UI</h1>
             <h2 class="desc">一个基于Vue 3的UI框架</h2>
             <p class="actions">
-                <a to="https://github.com">GitHub</a>
+                <a href="https://github.com/ningshk/kusa-ui" target="_blank">GitHub</a>
                 <router-link to="/doc/intro">开始</router-link>
             </p>
         </div>

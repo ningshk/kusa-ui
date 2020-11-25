@@ -10,8 +10,8 @@
     </Tabs>
 </template>
 <script lang="ts">
-import Tabs from '../lib/Tabs.vue'
-import Tab from '../lib/Tab.vue'
+import Tabs from '../lib/Tabs.vue'  // 这里是我的引用路径，请改为 import { Tabs } from 'kusa-ui'
+import Tab from '../lib/Tab.vue'  // 这里是我的引用路径，请改为 import { Tab } from 'kusa-ui'
 import { ref } from 'vue'
 export default {
     components: {
